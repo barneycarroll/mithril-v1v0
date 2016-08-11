@@ -2,7 +2,9 @@
 
 [/vivəʊ/]
 
-Combines the speed &amp; new features of Mithril v1, with the simple surface API of Mithril v0
+Aims to combine the speed &amp; new features of Mithril v1, with the simple surface API &amp; lost features of Mithril v0.
+
+Work in progress.
 
 ***
 
