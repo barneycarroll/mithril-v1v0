@@ -1,6 +1,6 @@
 {
   "name": "mithril-v1v0",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Combines the new speed & features of Mithril v1 with the simple surface API of Mithril",
   "main": "build/index.js",
   "scripts": {
@@ -22,7 +22,10 @@
   },
   "homepage": "https://github.com/barneycarroll/mithril-v1v0#readme",
   "devDependencies": {
-    "acorn": "^3.3.0",
-    "mithril": "github:lhorie/mithril.js#rewrite"
+    "v0": "./deps/v0",
+    "v1": "./deps/v1"
+  },
+  "dependencies": {
+    "asap": "^2.0.4"
   }
 }

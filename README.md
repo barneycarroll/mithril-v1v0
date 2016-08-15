@@ -4,17 +4,13 @@
 
 Aims to combine the speed &amp; new features of Mithril v1, with the simple surface API &amp; lost features of Mithril v0.
 
-Work in progress.
+**Doesn't work.**
 
 ***
 
 ## What?
 
-Mithril v1, with deprecated v0 surface APIs reintroduced. Specifically:
-
-1. [`m.redraw( true )`](https://github.com/lhorie/mithril.js/blob/270b20a/docs/mithril.redraw.md#forcing-redraw) is back
-2. as is [`m.redraw.strategy( 'diff' || 'all' || 'none' )`](https://github.com/lhorie/mithril.js/blob/270b20a/docs/mithril.redraw.md#changing-redraw-strategy)
-3. the `m.route()`'s' [getter](https://github.com/lhorie/mithril.js/blob/270b20a/docs/mithril.route.md#redirecting) &amp; [setter](https://github.com/lhorie/mithril.js/blob/270b20a/docs/mithril.route.md#reading-the-currently-active-route) overloads are back
+Mithril v1, with deprecated `m.redraw.strategy` reintroduced.
 
 ## Why?
 
@@ -37,6 +33,4 @@ The redraw stuff is entirely practical. There was opinionated stuff that Mithril
 
 ## How?
 
-v1v0's build process fetches the bundled Mithril source and transforms it to remove the closured references for core internals - so that Mithril's internal references are the same ones that are exposed. This effectively produces a functionaly identical version of Mithril v1 with facades eliminated.
-
-The APIs with missing functionality are then monkey-patched: a reference to the original method is kept and the surface API is replaced by a facade layer that performs extra logic before handing over 
+Require both Mithril APIs and patch judiciously.
